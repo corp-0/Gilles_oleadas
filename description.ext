@@ -1,0 +1,41 @@
+//Loading Screen Info
+author = "ZR Army - Dept. Tecnico y Diseño";
+OnLoadName = "Base Cooperativa";
+
+
+//Gametype and settings
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 100;
+};
+
+//Respawn options
+Respawn = Base;
+RespawnDelay = 5;
+RespawnDialog = 0;
+
+//Mission Options
+onLoadIntroTime = "false";
+onLoadMissionTime = "false";
+disabledAI = 1;
+defriefing = 1;
+showGPS = 1;
+
+//Debug and Admin
+enableDebugConsole = 1;
+
+//Sets the variables for corpse removal manager
+corpseManagerMode = 1;
+corpseLimit = 25;
+corpseRemovalMinTime = 60;
+corpseRemovalMaxTime = 1800;
+
+
+class CfgFunctions
+{
+    #include "funciones\gilles_oleadas\cfgFunctions.hpp"
+};
+
